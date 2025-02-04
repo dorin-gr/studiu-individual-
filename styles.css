@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+section {
+    padding: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+input, select, button {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+}
+
+.gallery {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery img {
+    width: 100%;
+    display: none;
+}
+
+.gallery img.active {
+    display: block;
+}
+
+button#prev, button#next {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 100%;
+    }
+}
